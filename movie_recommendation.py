@@ -41,7 +41,7 @@ def get_recommendations_with_tags(target_user_id, chosen_tag, k=5):
     try:
         target_idx = user_profiles[user_profiles['userId'] == target_user_id].index[0]
     except IndexError:
-        return "Օգտատերը չի գտնվել:"
+        return "Օգտատերը չի գտնվել: / User not found."
 
     target_vector = user_matrix[target_idx]
     
@@ -62,5 +62,5 @@ def get_recommendations_with_tags(target_user_id, chosen_tag, k=5):
     
     return movies[movies['movieId'].isin(recommended_movie_ids)][['title', 'genres']]
 
-# Փորձարկում. Օգտատեր 65, ով հետաքրքրված է "noir" թեգով
+# Փորձարկում. Օգտատեր 65, ով հետաքրքրված է "hero" թեգով
 print(get_recommendations_with_tags(target_user_id=65, chosen_tag='hero', k=5))
