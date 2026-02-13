@@ -41,12 +41,12 @@ print(recommendations)
 ## Requirements / Պահանջներ
 
 - Python 3.x
-- pandas
-- numpy
+- pandas>=2.0.0
+- numpy>=1.24.0
 
 Install dependencies:
 ```bash
-pip install pandas numpy
+pip install -r requirements.txt
 ```
 
 ## How it works / Ինչպես է աշխատում
