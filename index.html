@@ -44,6 +44,8 @@
         
             <li><a href="#news">ԹՈՓ</a></li>
             <li><a href="#history">Մեր մասին</a></li>
+            <li><a href="#calculator">Կալկուլյատոր</a></li>
+            <li><a href="#contact">Կապ</a></li>
         
         </ul>
       </nav>
@@ -181,19 +183,54 @@
                 </div>
             </div>
         </section>
+        <section id="calculator" class="calculator-section wow fadeInUp" data-wow-delay="300ms">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <div class="calculator-card">
+                            <h2 class="text-center">Օնլայն Կալկուլյատոր</h2>
+                            <p class="text-center">Հաշվեք արագ՝ գումարում, հանում, բազմապատկում, բաժանում:</p>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <label for="calc-first">Թիվ 1</label>
+                                    <input id="calc-first" type="number" class="form-control" placeholder="Օր. 25">
+                                </div>
+                                <div class="col-sm-4">
+                                    <label for="calc-operation">Գործողություն</label>
+                                    <select id="calc-operation" class="form-control">
+                                        <option value="+">+</option>
+                                        <option value="-">-</option>
+                                        <option value="*">×</option>
+                                        <option value="/">÷</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label for="calc-second">Թիվ 2</label>
+                                    <input id="calc-second" type="number" class="form-control" placeholder="Օր. 10">
+                                </div>
+                            </div>
+                            <div class="text-center calculator-actions">
+                                <button id="calc-btn" class="btn btn-primary btn-lg">Հաշվել</button>
+                            </div>
+                            <div id="calc-result" class="calc-result text-center">Արդյունքը կերևա այստեղ</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section id="contact" class="prefooter wow fadeInUp" data-wow-delay="300ms">
             <!-- change the image in style.css to the class .prefooter .container-fluid [approximately row 154] -->
             <div class="container-fluid">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-8">
-                            
-                           
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                        <div class="col-md-8 col-md-offset-2 text-center">
+                            <h3>Կապ մեզ հետ Telegram-ում</h3>
+                            <p>Գրեք մեզ ցանկացած հարցով՝ արագ պատասխան ստանալու համար:</p>
+                            <a class="btn btn-success btn-lg telegram-btn" href="https://t.me/hy_dub_bot" target="_blank" rel="noopener noreferrer" aria-label="Open Telegram bot hy_dub_bot in a new tab">@hy_dub_bot</a>
+                         </div>
+                     </div>
+                 </div>
+             </div>
         </section>
         <footer>
             <div class="container">
