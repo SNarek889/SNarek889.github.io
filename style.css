@@ -12,10 +12,18 @@ h1, h2, h3, h4, h5, h6
     margin-bottom: 1.1em;
 }
 
+body
+{
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(180deg, #f8fbff 0%, #eef4ff 100%);
+    color: #2c3e50;
+}
+
 .features,
 .blog,
 .gallery,
 .clients,
+.calculator-section,
 .prefooter .container-fluid
 {
     padding-top: 3.3em;
@@ -49,9 +57,10 @@ span.x4:before, i.x4:before
 
 header .container-fluid
 {
-    background-image: url('6.jpg');
+    background-image: linear-gradient(rgba(7, 36, 70, 0.45), rgba(85, 114, 207, 0.4)), url('6.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     height: 100vh;
     padding-top: 36px;
 }
@@ -90,12 +99,14 @@ header .container-fluid
 .jumbotron small
 {
     color: #FFFFFF;
+    text-shadow: 0 2px 16px rgba(0, 0, 0, 0.25);
 }
 
 .jumbotron p
 {
     color: #FFFFFF;
     margin-bottom: 5%;
+    text-shadow: 0 2px 16px rgba(0, 0, 0, 0.25);
 }
 
 
@@ -152,7 +163,57 @@ header .container-fluid
 
 .gallery
 {
-    background-color: #dddddd;
+    background-color: #edf2ff;
+}
+
+.features .col-md-4,
+.blog .col-md-7,
+.blog .col-md-5,
+.story .opaline,
+.gallery .item
+{
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.features .col-md-4:hover,
+.gallery .item:hover
+{
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(30, 60, 120, 0.12);
+}
+
+.calculator-section
+{
+    background: linear-gradient(135deg, #e9f0ff 0%, #f6ebff 100%);
+}
+
+.calculator-card
+{
+    background: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 16px 35px rgba(48, 82, 163, 0.18);
+    padding: 28px;
+}
+
+.calculator-actions
+{
+    margin-top: 24px;
+}
+
+.calc-result
+{
+    margin-top: 18px;
+    font-size: 1.35em;
+    font-weight: 700;
+    color: #274c9f;
+}
+
+.telegram-btn
+{
+    margin-top: 12px;
+    border-radius: 30px;
+    padding: 12px 30px;
+    box-shadow: 0 8px 20px rgba(25, 144, 75, 0.25);
 }
 
 .prefooter .container-fluid

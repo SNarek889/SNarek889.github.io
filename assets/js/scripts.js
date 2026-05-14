@@ -28,6 +28,37 @@ jQuery(document).ready(function() {
 
   new WOW().init();
 
+  //===================
+  //  Calculator
+  //===================
+  $('#calc-btn').click(function() {
+    var first = parseFloat($('#calc-first').val());
+    var second = parseFloat($('#calc-second').val());
+    var operation = $('#calc-operation').val();
+    var resultText = '';
+
+    if (isNaN(first) || isNaN(second)) {
+      $('#calc-result').text('Խնդրում ենք մուտքագրել երկու թիվ։');
+      return;
+    }
+
+    if (operation === '+') {
+      resultText = first + second;
+    } else if (operation === '-') {
+      resultText = first - second;
+    } else if (operation === '*') {
+      resultText = first * second;
+    } else if (operation === '/') {
+      if (second === 0) {
+        $('#calc-result').text('0-ի վրա բաժանումը թույլատրելի չէ։');
+        return;
+      }
+      resultText = first / second;
+    }
+
+    $('#calc-result').text('Արդյունք՝ ' + resultText);
+  });
+
 });
 
 
