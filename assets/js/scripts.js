@@ -56,6 +56,10 @@ jQuery(document).ready(function() {
       resultText = first / second;
     }
 
+    if (!Number.isInteger(resultText)) {
+      resultText = resultText.toFixed(2);
+    }
+
     $('#calc-result').text('Արդյունք՝ ' + resultText);
   });
 
