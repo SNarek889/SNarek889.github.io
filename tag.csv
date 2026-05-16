@@ -1,0 +1,26 @@
+userId,movieId,tag
+65,1,pixar
+65,2,adventure
+65,3,funny
+65,6,action hero
+65,10,hero
+18,1,classic
+18,2,fun
+18,5,comedy
+18,10,bond
+18,15,adventure
+50,1,childhood
+50,6,intense
+50,10,spy
+50,16,crime
+50,20,action
+72,2,classic adventure
+72,3,romance
+72,6,thriller
+72,10,spy movie
+72,16,gangster
+91,1,animation
+91,2,nostalgia
+91,10,action
+91,15,pirates
+91,20,train
